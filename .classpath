@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="JPush/app/build/generated/source/buildConfig/androidTest/debug"/>
+	<classpathentry kind="src" path="JPush/app/build/generated/source/buildConfig/debug"/>
+	<classpathentry kind="src" path="JPush/app/build/generated/source/r/androidTest/debug"/>
+	<classpathentry kind="src" path="JPush/app/build/generated/source/r/debug"/>
+	<classpathentry kind="src" path="JPush/app/src/androidTest/java"/>
+	<classpathentry kind="src" path="JPush/app/src/main/java"/>
+	<classpathentry kind="src" path="JPush/app/src/test/java"/>
+	<classpathentry kind="src" path="JPushJCenter/app/build/generated/source/buildConfig/androidTest/debug"/>
+	<classpathentry kind="src" path="JPushJCenter/app/build/generated/source/buildConfig/debug"/>
+	<classpathentry kind="src" path="JPushJCenter/app/build/generated/source/r/androidTest/debug"/>
+	<classpathentry kind="src" path="JPushJCenter/app/build/generated/source/r/debug"/>
+	<classpathentry kind="src" path="JPushJCenter/app/src/androidTest/java"/>
+	<classpathentry kind="src" path="JPushJCenter/app/src/main/java"/>
+	<classpathentry kind="src" path="JPushJCenter/app/src/test/java"/>
+	<classpathentry kind="lib" path="JPush/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"/>
+	<classpathentry kind="lib" path="JPush/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"/>
+	<classpathentry kind="lib" path="JPush/app/build/intermediates/jniLibs/debug/jcore-android_v1.1.3.jar"/>
+	<classpathentry kind="lib" path="JPush/app/build/intermediates/jniLibs/debug/jpush-android_v3.0.6.jar"/>
+	<classpathentry kind="lib" path="JPush/app/libs/jcore-android_v1.1.3.jar"/>
+	<classpathentry kind="lib" path="JPush/app/libs/jpush-android_v3.0.6.jar"/>
+	<classpathentry kind="lib" path="JPush/build/generated/mockable-android-26.jar"/>
+	<classpathentry kind="lib" path="JPush/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="JPushJCenter/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"/>
+	<classpathentry kind="lib" path="JPushJCenter/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"/>
+	<classpathentry kind="lib" path="JPushJCenter/build/generated/mockable-android-26.jar"/>
+	<classpathentry kind="lib" path="JPushJCenter/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="JPush/app/build/intermediates/classes/androidTest/debug"/>
+</classpath>
