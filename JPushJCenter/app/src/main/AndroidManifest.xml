@@ -41,8 +41,7 @@
 
         <receiver
             android:name="com.mcivicm.jpushjcenter.AliasAndTagReceiver"
-            android:enabled="true"
-            tools:node="replace">
+            android:enabled="true">
             <intent-filter>
                 <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
                 <category android:name="com.mcivicm.jpushjcenter" />
