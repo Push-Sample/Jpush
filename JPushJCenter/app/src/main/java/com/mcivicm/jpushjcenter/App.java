@@ -3,6 +3,9 @@ package com.mcivicm.jpushjcenter;
 import android.app.Application;
 import android.app.Notification;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import cn.jpush.android.api.BasicPushNotificationBuilder;
 import cn.jpush.android.api.CustomPushNotificationBuilder;
 import cn.jpush.android.api.JPushInterface;
@@ -13,12 +16,16 @@ import cn.jpush.android.api.MultiActionsNotificationBuilder;
  */
 
 public class App extends Application {
+
+    public static final String TAG = "bdgk";
+
     @Override
     public void onCreate() {
         super.onCreate();
         JPushInterface.setDebugMode(true);
         JPushInterface.init(this);
         initNotification();
+        initAlias();
     }
 
     @Override
@@ -64,5 +71,15 @@ public class App extends Application {
         builder.layoutIconDrawable = R.mipmap.pic_login;
         // 指定下拉状态栏时显示的通知图标
         JPushInterface.setPushNotificationBuilder(3, builder);
+    }
+
+    /**
+     * 可以设置为手机号
+     */
+    private void initAlias() {
+        JPushInterface.setAlias(this, 1, "13538193368");
+        Set<String> set = new HashSet<>(0);
+        set.add("fun");
+        JPushInterface.addTags(this, 1, set);
     }
 }

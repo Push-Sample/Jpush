@@ -13,8 +13,7 @@ import cn.jpush.android.api.JPushInterface;
  */
 
 public class MessageReceiver extends BroadcastReceiver {
-
-    private static final String TAG = "bdgk";
+    private static final String TAG = App.TAG;
 
     @Override
     public void onReceive(Context context, Intent intent) {
@@ -25,7 +24,7 @@ public class MessageReceiver extends BroadcastReceiver {
             String regId = bundle.getString(JPushInterface.EXTRA_REGISTRATION_ID);
             Log.d(TAG, "[MyReceiver] 接收Registration Id : " + regId);
         } else if (JPushInterface.ACTION_MESSAGE_RECEIVED.equals(intent.getAction())) {
-            Log.d(TAG, "收到了自定义消息。消息内容是：" + bundle.getString(JPushInterface.EXTRA_MESSAGE) + " name: " + intent.getStringExtra("name"));
+            Log.d(TAG, "收到了自定义消息。消息内容是：" + bundle.getString(JPushInterface.EXTRA_MESSAGE) + " extra: " + intent.getStringExtra(JPushInterface.EXTRA_EXTRA));
             // 自定义消息不会展示在通知栏，完全要开发者写代码去处理
         } else if (JPushInterface.ACTION_NOTIFICATION_RECEIVED.equals(intent.getAction())) {//接收到通知
             Log.d(TAG, "收到了通知");
