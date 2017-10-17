@@ -2,6 +2,9 @@ package com.mcivicm.jpushserver;
 
 import org.junit.Test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import cn.jiguang.common.ClientConfig;
 import cn.jiguang.common.resp.APIConnectionException;
 import cn.jiguang.common.resp.APIRequestException;
@@ -76,12 +79,18 @@ public class PushExample {
     }
 
     public PushPayload buildPushObject_android_audienceMore_messageWithExtras() {
+        Map<String, String> map = new HashMap<>();
+        map.put("key", "value");
+        map.put("a", "b");
         return PushPayload.newBuilder()
                 .setPlatform(Platform.android())
                 .setAudience(Audience.all())
+                .setNotification(Notification.android("通知内容", "通知标题", map))
                 .setMessage(Message.newBuilder()
-                        .setMsgContent(CONTENT)
-                        .addExtra("from", "JPush")
+                        .setTitle("标题")
+                        .setMsgContent("内容")
+                        .addExtra("key", "value")
+                        .addExtra("is", "json")
                         .build())
                 .build();
     }
